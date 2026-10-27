@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  }
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #f1f5f9;
+color: #1e293b;
+}
+
+header {
+background: #173b67;
+color: white;
+text-align: center;
+padding: 30px 15px;
+}
+
+header h1 {
+margin: 0 0 10px;
+}
+
+.container {
+max-width: 1000px;
+margin: 30px auto;
+padding: 0 18px;
+}
+
+#searchInput {
+width: 100%;
+padding: 14px;
+border: 1px solid #cbd5e1;
+border-radius: 8px;
+font-size: 16px;
+}
+
+#resultCount {
+color: #475569;
+margin: 18px 0;
+}
+
+.employee-grid {
+display: grid;
+grid-template-columns: repeat(
+auto-fit, minmax(240px, 1fr)
+);
+gap: 18px;
+}
+
+.employee-card {
+background: white;
+padding: 20px;
+border-radius: 12px;
+border-left: 5px solid #2563eb;
+box-shadow: 0 3px 10px #00000010;
+}
+
+.employee-card h2 {
+font-size: 20px;
+margin-top: 0;
+}
+
+.employee-card p {
+overflow-wrap: anywhere;
+line-height: 1.6;
+}
+
+.badge {
+display: inline-block;
+background: #dbeafe;
+color: #1d4ed8;
+padding: 5px 9px;
+border-radius: 20px;
+font-size: 13px;
+}
+
+.empty {
+background: white;
+padding: 20px;
+border-radius: 8px;
+}
+
+footer {
+background: #173b67;
+color: white;
+text-align: center;
+padding: 20px;
+overflow-wrap: anywhere;
+}
+
+@media (max-width: 500px) {
+header h1 {
+font-size: 25px;
+}
+}
